@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>college website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!--EXTERNAL CSS-->
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">St. Xavier's College (Autonomous)</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+             
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Department & Courses<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="ba.html">BA</a></li>
+                  <li><a href="bsc.html">Bsc</a></li>
+                  <li><a href="aic.html">AIC</a></li>
+                </ul>
+              </li>
+              <li><a href="Fac.html">Faculty</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up for newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+  <div class="jumbotron" style="background-image: url('xav3.jpg');">
+    <h1 class="display-4"> Provocans Ad Volandum!</h1>
+    <p class="lead">St Xavier's college is private college founded in 1869 by the Jesuits with a vision of creating an academic community dedicated to the holistic education of future leaders who will demonstrate innovation in their professional competencies, integration in their personal lives and inclusion in their social contribution.
+
+    </p>
+    <hr class="my-4">
+    <p>Our motto "Provocans Ad Volandum!" translates to “Challenging to Fly”,which reinforces our Key Values of Innovation, Integration, Inclusion </p>
+    <a class="btn btn-primary btn-lg" href="about.html" role="button">Learn more</a>
+  </div>
+</main> 
+
+<div class="card shadow">
+  <div class="card-body">
+    <h5 class="card-title">Newsletter</h5>
+    <form class="form-inline" action="insert.php" method="post">
+      <label class="sr-only" for="inlineFormInputName2">Name</label>
+      <input type="text" name="name" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe" required>
+
+      <label class="sr-only" for="inlineFormInputName2">Email</label>
+      <input type="email" name="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email" required>
+    
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+</div>
+  </div><!--container-->
+
+</body>
+</html>

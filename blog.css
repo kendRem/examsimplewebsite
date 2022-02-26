@@ -1,0 +1,33 @@
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background:linear-gradient(to bottom,#659DBD,#fbeec1)
+
+}
+font{
+  color:black;
+}
+
+.jumbotron{
+  color:whitesmoke;
+}
+.greybox{
+  color:whitesmoke;
+}
+.card-body{
+border:12px 12px 12px 12px;
+padding:15px;
+background-color: #8D8741;
+}
+header{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#8D8741
+}

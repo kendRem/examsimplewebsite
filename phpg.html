@@ -1,0 +1,39 @@
+Question: Prepare a php game which will contain words for the user to unscramble
+Code: <!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Trial</title>
+</head>
+<body>
+<h2>Lets Play a game </h2>
+<h2> Enter the proper word for each word given, 2 points for every right guess and -1 point for every wrong guess, out of 5 words </h2>
+<?php
+$str1="Cactus"; $shuf1=str_shuffle($str1); echo "Word_1: $shuf1 "; echo "<br><br>";
+$str2="Nigeria"; $shuf2=str_shuffle($str2); echo "Word_2: $shuf2 "; echo "<br><br>";
+$str3="Purple"; $shuf3=str_shuffle($str3); echo "Word_3: $shuf3 "; echo "<br><br>";
+$str4="Herring"; $shuf4=str_shuffle($str4); echo "Word_4: $shuf4 "; echo "<br><br>";
+$str5="Templars"; $shuf5=str_shuffle($str5); echo "Word_5: $shuf5 "; echo "<br><br>";
+?>
+<form action="" method="">
+<h2>Enter Correct words for each</h2>
+<input name="user1" type="text" placeholder="Enter Word_1"/><br><br> <input name="user2" type="text" placeholder="Enter Word_2" /><br><br> <input name="user3" type="text" placeholder="Enter Word_3"/><br><br> <input name="user4" type="text" placeholder="Enter Word_4"/><br><br> <input name="user5" type="text" placeholder="Enter Word_5"/><br><br> <input name="submit" type="submit" />
+</form> <?PHP
+if (isset($_POST['submit'])) { $usr1 = $_POST['user1']; $usr2 = $_POST['user2']; $usr3 = $_POST['user3']; $usr4 = $_POST['user4']; $usr5 = $_POST['user5'];
+       
+ $score=0;
+echo "<p>initial score: $score</p>";
+if($usr1==$str1){ $score=$score+2; }
+else{ $score=$score-1; }
+if($usr2==$str2){ $score=$score+2; }
+else{ $score=$score-1; }
+if($usr3==$str3){ $score=$score+2; }
+else{ $score=$score-1; }
+if($usr4==$str4){ $score=$score+2; }
+else{ $score=$score-1; }
+if($usr5==$str5){ $score=$score+2; }
+else{ $score=$score-1; }
+}
+echo " final score: $score"; $score=0;
+?>
+</body> 
+</html>
